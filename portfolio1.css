@@ -1,0 +1,74 @@
+css
+
+body {
+    font-family: Arial, sans serif;
+    margin: 0;
+    padding: 0;
+    background-color: #a2cfee;
+}
+
+h1, h2, h3 {
+   color:#000d16;
+}
+
+header {
+    background-color:#000d16;
+    color:#a2cfee;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    color:#000d16;
+    text-decoration: none;
+}
+
+header nav ul li a {
+    color:#a2cfee;
+}
+
+#about {
+    background-color:#a2cfee;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#about h1 {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+#projects {
+    background-color: #a2cfee;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.project {
+    margin: 30px 0;
+}
+
+.project h3 {
+    font-size: 1.Bem;
+}
+
+.project a {
+    text-decoration: none;
+    color:#000d16;
+    font-weight: bold;
+}
+
+footer {
+    background-color:#000d16;
+    color:#a2cfee;
+    text-align:center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
