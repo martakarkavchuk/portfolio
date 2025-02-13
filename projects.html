@@ -1,11 +1,123 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Marta Karkavchuk</title>
     <link rel="stylesheet" href="portfolio.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h2 {
+            color: #333;
+            font-size: 30px;
+            margin-top: 0;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        .projects {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .projects h3 {
+            font-size: 24px;
+            color: #444;
+        }
+
+        .projects p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .projects a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .projects a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .skills ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills ul li {
+            font-size: 18px;
+            color: #444;
+            margin-bottom: 8px;
+        }
+
+        .contact a {
+            color: #007BFF;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <nav>
@@ -17,25 +129,44 @@
         </nav>
     </header>
 
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="projects">
-            <h3>Project 1</h3>
-            <h3>During this semester I plan on learning more aboutt the cybersecurity and make a project based on that. <br> In six weeks I will complete <a href="https://www.netacad.com/courses/networking-basics?courseLang=en-US&utm_campaign=writ&utm_content=networking-basics-get-started-button&utm_source=cisco.com&utm_medium=referral">22 hours Cisco course</a> 
-            After that, with some use of <a href="https://openai.com/index/chatgpt/">AI</a>, I plan on trying to create a network.</h3>
-            <a href="project1.html">View Project</a>
-        </div>
-        
-    </section>
+    <main>
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div class="projects">
+                <h3>Project 1: Networking & Cybersecurity</h3>
+                <p>During this semester, I plan to expand my knowledge of cybersecurity and build a project based on it. In the next six weeks, I will complete a <a href="https://www.netacad.com/courses/networking-basics?courseLang=en-US&utm_campaign=writ&utm_content=networking-basics-get-started-button&utm_source=cisco.com&utm_medium=referral" target="_blank">22-hour Cisco Networking Basics course</a>. After completing the course, I aim to use tools such as <a href="https://openai.com/index/chatgpt/" target="_blank">AI</a> and network design principles to create a secure and efficient network.</p>
+                <a href="project1.html">View Project Details</a>
+            </div>
+        </section>
 
-    <section>
-        <h2>Contact</h2>
-        <a href="https://www.linkedin.com/in/marta-karkavchuk-b30865345">My LinkedIn</a>
-    </section>
+        <section id="aboutme">
+            <h2>About Me</h2>
+            <p>Hello! I'm Marta Karkavchuk, a passionate learner in the field of networking and cybersecurity. I have always been fascinated by the ever-evolving landscape of technology and how interconnected the world has become through networks. As I continue to develop my skills in networking, I am focusing on how to build secure, scalable networks that can withstand common vulnerabilities and attacks.</p>
+            <p>I'm currently working towards expanding my knowledge and skills in cybersecurity, with a particular interest in ethical hacking and network security protocols.</p>
+        </section>
+
+        <section id="skills" class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Networking: IP Addressing, Routing, VLANs, DHCP, DNS</li>
+                <li>Cybersecurity: Firewalls, Access Control, Encryption, Intrusion Detection</li>
+                <li>Network Configuration: Cisco Routers & Switches, VPNs</li>
+                <li>Tools: Wireshark, Cisco Packet Tracer, Kali Linux, Metasploit</li>
+                <li>Programming: Python, Bash (for network automation)</li>
+                <li>Cloud Technologies: AWS, Google Cloud</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to me on LinkedIn or via email.</p>
+            <a href="https://www.linkedin.com/in/marta-karkavchuk-b30865345" target="_blank">My LinkedIn</a>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2025 Marta Karkavchuk. All rights reserved.</p>
     </footer>
-
 </body>
+
 </html>
