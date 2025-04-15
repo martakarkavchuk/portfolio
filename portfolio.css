@@ -2,8 +2,8 @@
 body {
     font: "Lato";
     line-height: 1.5;
-    margin: 20;
-    padding: 20;
+    margin: 0;
+    padding: 0;
     background-color: #f6f6f6;
     color: #333;
 }
@@ -14,7 +14,7 @@ h2, h3 {
 }
 
 a {
-    color: #0077FF;
+    color: #55ff00;
     text-decoration: none;
 }
 
