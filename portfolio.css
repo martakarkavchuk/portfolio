@@ -1,20 +1,20 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+    font: "Lato";
+    line-height: 1.5;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f6f6f6;
     color: #333;
 }
 
 h2, h3 {
-    font-family: 'Arial', sans-serif;
+    font: "Lato";
     color: #333;
 }
 
 a {
-    color: #007BFF;
+    color: #0077FF;
     text-decoration: none;
 }
 
