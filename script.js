@@ -1,46 +1,28 @@
-const track = document.querySelector('.carousel-track');
-const slides = Array.from(track.children);
-const nextButton = document.querySelector('.carousel-button.next');
-const prevButton = document.querySelector('.carousel-button.prev');
+window.onload = function () {
+    let slides = 
+        document.getElementsByClassName('carousel-item');
 
-let currentSlide = 0;
+    function addActive(slide) {
+        slide.classList.add('active');
+    }
 
-function updateCarousel() {
-  const slideWidth = slides[0].getBoundingClientRect().width;
-  track.style.transform = `translateX(-${slideWidth * currentSlide}px)`;
-}
+    function removeActive(slide) {
+        slide.classList.remove('active');
+    }
 
-// Next button functionality
-nextButton.addEventListener('click', () => {
-  currentSlide = (currentSlide + 1) % slides.length; // Loop back to the first slide
-  updateCarousel();
-});
-
-// Previous button functionality
-prevButton.addEventListener('click', () => {
-  currentSlide = (currentSlide - 1 + slides.length) % slides.length; // Loop back to the last slide
-  updateCarousel();
-});
-
-// Auto-play functionality (change slide every 5 seconds)
-let autoPlay = setInterval(() => {
-  currentSlide = (currentSlide + 1) % slides.length;
-  updateCarousel();
-}, 5000);
-
-// Reset auto-play on user interaction
-nextButton.addEventListener('click', () => {
-  clearInterval(autoPlay); // Stop auto-play
-  autoPlay = setInterval(() => {
-    currentSlide = (currentSlide + 1) % slides.length;
-    updateCarousel();
-  }, 5000); // Restart auto-play after user clicks next
-});
-
-prevButton.addEventListener('click', () => {
-  clearInterval(autoPlay); // Stop auto-play
-  autoPlay = setInterval(() => {
-    currentSlide = (currentSlide + 1) % slides.length;
-    updateCarousel();
-  }, 5000); // Restart auto-play after user clicks prev
-});
+    addActive(slides[0]);
+    setInterval(function () {
+        for (let i = 0; i < slides.length; i++) {
+            if (i + 1 == slides.length) {
+                addActive(slides[0]);
+                setTimeout(removeActive, 350, slides[i]);
+                break;
+            }
+            if (slides[i].classList.contains('active')) {
+                setTimeout(removeActive, 350, slides[i]);
+                addActive(slides[i + 1]);
+                break;
+            }
+        }
+    }, 1500);
+};
