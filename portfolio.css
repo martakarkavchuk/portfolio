@@ -162,6 +162,7 @@ footer p {
 }
 
 .carousel-item .slide-image {
+    position: center;
     width: 1080px;
     height: 640px;
     background-size: cover;
