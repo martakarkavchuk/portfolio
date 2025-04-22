@@ -118,16 +118,6 @@ h2 {
 }
 
 /* Carousel projects */
-* {
-    box-sizing: border-box;
-}
-
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .carousel {
     position: relative;
     width: 270px;
