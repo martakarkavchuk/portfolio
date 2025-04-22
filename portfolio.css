@@ -118,49 +118,63 @@ h2 {
 }
 
 /* Carousel projects */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .carousel {
-  position: relative;
-  overflow: hidden;
-  border: 1px solid #ccc;
+    position: relative;
+    width: 270px;
+    height: 160px;
+    overflow: hidden;
+    background-color: #cdcdcd;
 }
 
-.carousel-track {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
+.carousel-item .slide-image {
+    width: 270px;
+    height: 160px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.carousel-slide {
-  min-width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2rem;
-  background-color: #f2f2f2;
+.carousel-item {
+    position: absolute;
+    width: 100%;
+    height: 270px;
+    border: none;
+    top: 0;
+    left: 100%;
 }
 
-.carousel-slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.carousel-item.active {
+    left: 0;
+    transition: all 0.3s ease-out;
 }
 
-.carousel-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0,0,0,0.5);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
+.carousel-item div {
+    height: 100%;
 }
 
-.carousel-button.prev {
-  left: 10px;
+.red {
+    background-color: red;
 }
 
-.carousel-button.next {
-  right: 10px;
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.violet {
+    background-color: violet;
 }
 
 
