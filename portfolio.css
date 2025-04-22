@@ -1,7 +1,7 @@
 /* General Styles */
 body {
-    font: "Lato";
-    line-height: 1.5;
+    font-family: "Inter", sans-serif;
+    line-height: 3;
     margin: 0;
     padding: 0;
     background-color: #f6f6f6;
@@ -9,7 +9,7 @@ body {
 }
 
 h2, h3 {
-    font: "Lato";
+    font-family: 'Inter', sans-serif;
     color: #333;
 }
 
