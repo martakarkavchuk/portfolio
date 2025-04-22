@@ -179,7 +179,7 @@ footer p {
 }
 
 .carousel-item.active {
-    left: 30px;
+    left: 0%;
     transition: all 0.5s ease-out;
 }
 
