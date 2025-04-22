@@ -155,10 +155,9 @@ footer p {
 /* Carousel projects */
 .carousel {
     position: center;
-    width: 540px;
-    height: 320px;
+    width: 1080px;
+    height: 640px;
     overflow: hidden;
-    background-color: #cdcdcd;
 }
 
 .carousel-item .slide-image {
