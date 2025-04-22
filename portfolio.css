@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     font-family: "Inter", sans-serif;
-    line-height: 3;
+    line-height: 2;
     margin: 0;
     padding: 0;
     background-color: #f6f6f6;
@@ -14,7 +14,7 @@ h2, h3 {
 }
 
 a {
-    color: #55ff00;
+    color: #0056b3;
     text-decoration: none;
 }
 
@@ -39,6 +39,7 @@ header nav ul {
 header nav ul li {
     display: inline-block;
     margin-right: 30px;
+    border-radius: 5px;
 }
 
 header nav ul li a {
@@ -50,7 +51,6 @@ header nav ul li a {
 
 header nav ul li a:hover {
     background-color: #0056b3;
-    border-radius: 5px;
     text-decoration: none;
 }
 
