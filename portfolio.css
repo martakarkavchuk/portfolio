@@ -155,15 +155,15 @@ footer p {
 /* Carousel projects */
 .carousel {
     position: relative;
-    width: 270px;
-    height: 160px;
+    width: 540px;
+    height: 320px;
     overflow: hidden;
     background-color: #cdcdcd;
 }
 
 .carousel-item .slide-image {
-    width: 270px;
-    height: 160px;
+    width: 540px;
+    height: 320px;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -179,7 +179,7 @@ footer p {
 
 .carousel-item.active {
     left: 0;
-    transition: all 7s ease-out;
+    transition: all 0.5s ease-out;
 }
 
 .carousel-item div {
