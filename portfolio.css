@@ -154,34 +154,33 @@ footer p {
 
 /* Carousel projects */
 .carousel {
-    position: center;
-    width: 1080px;
-    height: 640px;
-    overflow: hidden;
-}
-
-.carousel-item .slide-image {
-    position: center;
+    position: relative; /* This is important! */
     width: 100%;
-    height: auto;
-    background-size: cover;
-    background-repeat: no-repeat;
+    max-width: 1080px;
+    height: 640px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 .carousel-item {
     position: absolute;
     width: 100%;
-    height: 1080px;
-    border: none;
-    top: 100px;
+    height: 100%;
     left: 100%;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
 }
 
 .carousel-item.active {
-    left: 0%;
-    transition: all 0.5s ease-out;
+    left: 0;
+    opacity: 1;
+    z-index: 1;
 }
 
-.carousel-item div {
+.slide-image {
+    width: 100%;
     height: 100%;
+    background-size: cover;
+    background-position: center;
 }
+
