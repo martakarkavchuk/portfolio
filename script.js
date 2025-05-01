@@ -1,28 +1,20 @@
-window.onload = function () {
-    let slides = 
-        document.getElementsByClassName('carousel-item');
+let currentSlide = 0;
+const slides = document.querySelectorAll('.carousel-item');
+const totalSlides = slides.length;
 
-    function addActive(slide) {
-        slide.classList.add('active');
-    }
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.toggle('active', i === index);
+  });
+}
 
-    function removeActive(slide) {
-        slide.classList.remove('active');
-    }
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % totalSlides;
+  showSlide(currentSlide);
+}
 
-    addActive(slides[0]);
-    setInterval(function () {
-        for (let i = 0; i < slides.length; i++) {
-            if (i + 1 == slides.length) {
-                addActive(slides[0]);
-                setTimeout(removeActive, 350, slides[i]);
-                break;
-            }
-            if (slides[i].classList.contains('active')) {
-                setTimeout(removeActive, 350, slides[i]);
-                addActive(slides[i + 1]);
-                break;
-            }
-        }
-    }, 1500);
-};
+// Show first slide initially
+showSlide(currentSlide);
+
+// Auto-slide every 3 seconds
+setInterval(nextSlide, 3000);
