@@ -1,3 +1,7 @@
 body {
     font: Lato;
 }
+
+main {
+    font-family: Lato, sans-serif;
+}
