@@ -78,6 +78,11 @@ section h2 {
     font-weight: bold;
 }
 
+video {
+    width: 1050;
+    height: 450;
+}
+
 
 
 /* Projects Section */
