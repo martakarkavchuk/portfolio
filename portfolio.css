@@ -33,8 +33,8 @@ nav ul li a:hover {
 
 /* About Section */
 #about {
-  text-align: center;
-  padding: 4rem 2rem;
+  padding: 4rem 3rem;   /* space from left */
+  max-width: 800px;     /* keep text narrower */
 }
 
 #about h1 {
@@ -45,38 +45,14 @@ nav ul li a:hover {
 
 #about p {
   font-size: 1.2rem;
-  max-width: 700px;
-  margin: 0.5rem auto;
+  margin: 0.8rem 0;
   line-height: 1.6;
 }
 
 /* Contact Section */
 #contact {
-  text-align: center;
-  padding: 2rem;
+  padding: 2rem 3rem;   /* space from left */
+  max-width: 800px;
 }
 
-#contact h2 {
-  color: #9df2c3;
-  margin-bottom: 1rem;
-}
-
-#contact a {
-  color: #72d9a0;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-#contact a:hover {
-  text-decoration: underline;
-}
-
-/* Footer */
-footer {
-  background-color: #0d2a47;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 3rem;
-  font-size: 0.9rem;
-  color: #9df2c3;
-}
+#contact h2
