@@ -3,7 +3,7 @@ body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #0a1f33; /* Dark Blue */
-  color: #e8f9f1; /* Light greenish-white */
+  color: #d9f1ff; /* Very light blue for text */
 }
 
 /* Header & Navigation */
@@ -22,37 +22,87 @@ nav ul {
 
 nav ul li a {
   text-decoration: none;
-  color: #9df2c3; /* Light Green accent */
+  color: #b9e5ff; /* Light blue accent */
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-  color: #72d9a0;
+  color: #e2f7ff; /* Brighter on hover */
 }
 
 /* About Section */
 #about {
-  padding: 4rem 3rem;   /* space from left */
-  max-width: 800px;     /* keep text narrower */
+  padding: 4rem 3rem;
+  max-width: 800px;
 }
 
 #about h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
-  color: #9df2c3;
+  color: #e2f7ff; /* Bright light blue */
 }
 
 #about p {
   font-size: 1.2rem;
   margin: 0.8rem 0;
   line-height: 1.6;
+  color: #d9f1ff; /* Very light blue */
+}
+
+#about ul {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+#about ul li {
+  margin: 0.3rem 0;
+}
+
+/* About Me Section */
+#aboutme {
+  padding: 2rem 3rem;
+  max-width: 800px;
+}
+
+#aboutme h2 {
+  color: #e2f7ff;
+  margin-bottom: 1rem;
+}
+
+#aboutme p {
+  color: #d9f1ff;
+  line-height: 1.6;
 }
 
 /* Contact Section */
 #contact {
-  padding: 2rem 3rem;   /* space from left */
+  padding: 2rem 3rem;
   max-width: 800px;
 }
 
-#contact h2
+#contact h2 {
+  color: #e2f7ff;
+  margin-bottom: 1rem;
+}
+
+#contact a {
+  color: #b9e5ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+  color: #e2f7ff;
+}
+
+/* Footer */
+footer {
+  background-color: #0d2a47;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #b9e5ff;
+}
